@@ -1,0 +1,25 @@
+#terminalText {
+    font-family: 'Courier New', monospace;
+    white-space: pre;
+    font-size: 40px;
+  }
+  
+ #textAccroche {
+    font-family: 'Courier New', monospace;
+    font-size: 25px;
+  }
+
+  p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+  }
+
+  #cursor {
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+  }

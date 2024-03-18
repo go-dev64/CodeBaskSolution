@@ -1,0 +1,27 @@
+{
+  "app.css": "http://localhost:9091/css/app.css",
+  "app.js": "http://localhost:9091/js/app.js",
+  "entrypoints": {
+    "app": {
+      "assets": {
+        "js": [
+          "http://localhost:9091/js/runtime.js",
+          "http://localhost:9091/js/vendors-node_modules_hotwired_stimulus-webpack-helpers_dist_stimulus-webpack-helpers_js-node_-3b6ba2.js",
+          "http://localhost:9091/js/app.js"
+        ],
+        "css": [
+          "http://localhost:9091/css/app.css"
+        ]
+      }
+    }
+  },
+  "js/vendors-node_modules_hotwired_stimulus-webpack-helpers_dist_stimulus-webpack-helpers_js-node_-3b6ba2.js": "http://localhost:9091/js/vendors-node_modules_hotwired_stimulus-webpack-helpers_dist_stimulus-webpack-helpers_js-node_-3b6ba2.js",
+  "runtime.js": "http://localhost:9091/js/runtime.js",
+  "vendors/.gitkeep": "http://localhost:9091/vendors/.gitkeep",
+  "vendors/images/.gitkeep": "http://localhost:9091/vendors/images/.gitkeep",
+  "vendors/images/33290.jpg": "http://localhost:9091/vendors/images/33290.jpg",
+  "vendors/images/7094814.jpg": "http://localhost:9091/vendors/images/7094814.jpg",
+  "vendors/images/code.png": "http://localhost:9091/vendors/images/code.png",
+  "vendors/images/parallax.jpg": "http://localhost:9091/vendors/images/parallax.jpg",
+  "vendors/js/htmx.js": "http://localhost:9091/vendors/js/htmx.js"
+}

@@ -1,0 +1,44 @@
+{% load webpack_loader static %}
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta name="keywords" content="foo,bar" />
+    <meta name="description" content="foo" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      {% block title %}
+      {% endblock title %}
+    </title>
+    {% block head_styles %}
+      {% stylesheet_pack "app" %}
+    {% endblock head_styles %}
+    {% block head_scripts %}
+      {% javascript_pack "app" attrs="defer" %}
+    {% endblock head_scripts %}
+  </head>
+  <body class="{% block body_classes %}position-relative min-vh-100{% endblock body_classes %}"
+        hx-headers='{"X-CSRFToken": "{{ csrf_token }}"}'>
+    {% block messages %}
+      {% include "partials/messages.html" %}
+    {% endblock messages %}
+    {% block navigation %}
+      <!--{% include "partials/navigation.html" %}-->
+    {% endblock navigation %}
+    {% block outer_content %}
+      <main>
+        {% block content %}
+          {# placer le contenu principal ici #}
+        {% endblock content %}
+      </main>
+    {% endblock outer_content %}
+    {% block footer %}
+      {% include "partials/footer.html" %}
+    {% endblock footer %}
+    {% block modal %}
+      {% include "partials/toasts.html" %}
+    {% endblock modal %}
+    {% block bottom_scripts %}
+    {% endblock bottom_scripts %}
+  </body>
+</html>

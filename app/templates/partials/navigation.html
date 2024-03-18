@@ -1,0 +1,46 @@
+{% load webpack_loader static %}
+<nav class="navbar navbar-expand-lg navbar-light py-4 py-lg-0 fixed-top bg-white border-bottom ">
+    <div class="container center">
+        <a class="navbar-brand font-serif h6 text-black fw-bold mb-0"
+           href="{% url "pages:home" %}">
+            <img src="{% static 'vendors/images/code.png' %}"
+                 class="rounded float-start"
+                 alt="Logo de Code Bask Solution"
+                 width="auto%"
+                 height="80px">
+        </a>
+        <p class="text-center h4 m-1">
+            Code Bask
+            <br>
+            Solution
+        </p>
+        <button class="navbar-toggler border-0"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase" href="#intro">Acceuil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase" href="#about">Notre agence</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase" href="#services">Nos Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase" href="#work">Nos Projets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase" href="#contact">Contactez-nous</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

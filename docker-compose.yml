@@ -1,0 +1,18 @@
+version: "3.9"
+services:
+    postgres:
+        container_name: codebasksolution_postgres_container_49078
+        image: postgres:15
+        working_dir: /app
+        restart: always
+        ports:
+            - "49078:5432"
+        environment:
+            POSTGRES_USER: postgres
+            POSTGRES_PASSWORD: Guillaume
+            POSTGRES_DB: postgres
+        volumes:
+            - "postgres_codebasksolution_49078:/var/lib/postgresql/data"
+
+volumes:
+    postgres_codebasksolution_49078:

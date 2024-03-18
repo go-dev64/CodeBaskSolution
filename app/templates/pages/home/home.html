@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% block title %}
+    Acceuil | codebasksolution
+{% endblock title %}
+{% block content %}
+    {% include "pages/home/section/intro.html" %}
+    {% include "pages/home/section/about.html" %}
+    {% include "pages/home/section/services.html" %}
+    {% include "pages/home/section/projets.html" %}
+    {% include "pages/home/section/contact.html" %}
+{% endblock content %}

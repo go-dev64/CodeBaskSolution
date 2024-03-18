@@ -1,13 +1,9 @@
-{% load webpack_loader static %}
+{% load static %}
 <nav class="navbar navbar-expand-lg navbar-light py-4 py-lg-0 fixed-top bg-white border-bottom ">
     <div class="container center">
         <a class="navbar-brand font-serif h6 text-black fw-bold mb-0"
            href="{% url "pages:home" %}">
-            <img src="{% static 'vendors/images/code.png' %}"
-                 class="rounded float-start"
-                 alt="Logo de Code Bask Solution"
-                 width="auto%"
-                 height="80px">
+            <img src="{% static "vendors/images/code.png" %}" class="rounded float-start" alt="Logo de Code Bask Solution" width="auto%" height="80px">
         </a>
         <p class="text-center h4 m-1">
             Code Bask
@@ -38,7 +34,7 @@
                     <a class="nav-link text-uppercase" href="#work">Nos Projets</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-uppercase" href="#contact">Contactez-nous</a>
+                    <a class="nav-link text-uppercase" href="#contact-form">Contactez-nous</a>
                 </li>
             </ul>
         </div>

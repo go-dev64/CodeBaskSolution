@@ -1,10 +1,7 @@
-from django.urls import path
+from django.urls import include, path
 
-from .views import ContactFormView, home_view
+from .views import home_router
 
 app_name = "pages"
 
-urlpatterns = [
-    path("", home_view, name="home"),
-    path("contact/", ContactFormView.as_view(), name="contact"),
-]
+urlpatterns = [path("", include(home_router.urls))]

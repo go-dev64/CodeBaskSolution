@@ -1,0 +1,20 @@
+{% load static %}
+{% load crispy_forms_tags %}
+<!-- START CONTACT SECTION -->
+<div id="contact-form"
+     class="container col-xl-10 col-xxl-8 px-4 py-5 text-center">
+    <h2 class="heading text-center">Formulaire de contact</h2>
+    <div class="row align-items-center g-lg-5 py-5">
+        <div class="col-lg-6 text-center text-lg-center">
+            <h3 class=" fw-bold">Vous avez un projet, une idée, ou un besoin spécifique ?</h3>
+            <p class="text-center">
+                Ne laissez pas vos questions sans réponse. Contactez-nous pour explorer ensemble comment <span class="non-separable"><strong>Code Bask Solution</strong></span> peut vous aider à transformer vos visions en solutions concrètes et performantes. Nous sommes là pour vous accompagner à chaque étape de votre projet, en vous fournissant expertise et conseils sur mesure.
+            </p>
+        </div>
+        <div id="contact-content" class="col-lg-6">
+            <img class="rounded float-end img-fluid mh-100" src="{% static "vendors/images/3459559.jpg" %}" alt="un environnement de travail collaboratif axé sur le développement de logiciels. Au premier plan, une grande main tape sur un clavier devant un écran d'ordinateur affichant du code. Autour, des individus engagés dans diverses activités professionnelles : une équipe élabore des stratégies autour d'un tableau blanc, un individu programme sur un ordinateur de bureau, un autre est en pleine réflexion créative, et un troisième est assis sur une pile de livres étiquetés "CODE". Des icônes de réseaux sans fil, de loupe, de rouages, et une ampoule symbolisant l'idéation sont également visibles. L'ensemble crée une scène dynamique de productivité et d'innovation dans le domaine du développement informatique.">
+            <div class="col-md-10 mx-auto col-lg-5">{% include "pages/home/hx/display-acces-button-to-contact-form.html" %}</div>
+        </div>
+    </div>
+</div>
+<!-- /- END CONTACT SECTION -->

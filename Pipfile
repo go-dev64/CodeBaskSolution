@@ -12,6 +12,7 @@ crispy-bootstrap5 = "*"
 python-webpack-boilerplate = "*"
 django-allauth = "*"
 django-template-partials = "*"
+selenium = "*"
 
 [dev-packages]
 pytest = "*"

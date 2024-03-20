@@ -7,7 +7,7 @@ from .forms import ContactForm
 home_router = Router()
 
 
-@home_router.get(url_name="home")
+@home_router.get(url_name="home", url_path=" ")
 def home_view(request):
     return TemplateResponse(request, "pages/home/home.html")
 
@@ -45,3 +45,8 @@ def hx__submit_contact_form(request):
     return TemplateResponse(
         request, "pages/home/hx/submit-contact-form--success.html", {"form": form}
     )
+
+
+@home_router.get(url_name="about")
+def about(request):
+    return TemplateResponse(request, "pages/about/about.html")

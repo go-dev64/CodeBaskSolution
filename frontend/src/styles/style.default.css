@@ -14401,4 +14401,23 @@ STYLE SWITCHER FOR DEMO
 .non-separable {
   white-space: nowrap;
 }
+
+.title-service {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1,5rem;
+  font-weight: bold;
+}
+
+.p-service {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1,1rem;
+  }
+
+.image-service {
+  max-height: 100px;
+  width: auto;
+ 
+}
+
+
 /* eslint-enable */

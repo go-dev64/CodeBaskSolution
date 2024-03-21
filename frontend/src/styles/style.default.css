@@ -14416,8 +14416,22 @@ STYLE SWITCHER FOR DEMO
 .image-service {
   max-height: 100px;
   width: auto;
- 
 }
+
+:target:before {
+  content: "";
+  display: block;
+  height: 150px; /* La hauteur de ta navbar fixe */
+  margin: -90px 0 0; /* Négatif la hauteur de ta navbar fixe */
+}
+
+@media (max-width: 990px) {
+  :target:before {
+    height: 350px; /* Hauteur ajustée de la navbar sur les petits écrans */
+    margin: -100px 0 0; /* Négatif la hauteur ajustée de la navbar sur les petits écrans */
+  }
+}
+
 
 
 /* eslint-enable */

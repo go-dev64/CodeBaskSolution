@@ -1,5 +1,8 @@
 from django.contrib import messages
+from django.shortcuts import get_object_or_404, render
 from django.template.response import TemplateResponse
+
+from app.pages.models import Category, Project
 
 from ..utils.routers import Router
 from .forms import ContactForm
@@ -9,7 +12,11 @@ home_router = Router()
 
 @home_router.get(url_name="home", url_path=" ")
 def home_view(request):
-    return TemplateResponse(request, "pages/home/home.html")
+
+    return TemplateResponse(
+        request,
+        "pages/home/home.html",
+    )
 
 
 @home_router.get
@@ -50,3 +57,18 @@ def hx__submit_contact_form(request):
 @home_router.get(url_name="about")
 def about(request):
     return TemplateResponse(request, "pages/about/about.html")
+
+
+def projects_list(request):
+    projects = Project.objects.all()
+    categories = Category.objects.all()
+    return render(
+        request,
+        "pages/project/projects_list.html",
+        {"categories": categories, "projects": projects},
+    )
+
+
+def project_detail(request, id):
+    project = get_object_or_404(Project, id=id)
+    return render(request, "pages/project/detail.html", {"project": project})

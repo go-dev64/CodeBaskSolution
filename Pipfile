@@ -13,6 +13,7 @@ python-webpack-boilerplate = "*"
 django-allauth = "*"
 django-template-partials = "*"
 selenium = "*"
+markdown = "*"
 
 [dev-packages]
 pytest = "*"

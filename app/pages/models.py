@@ -1,16 +1,22 @@
 from django.db import models
+from django.utils import timezone
 
 
 class Project(models.Model):
-    title = models.CharField(max_length=100)
+    title = models.CharField(max_length=250)
+    slug = models.SlugField(max_length=250)
     category = models.ForeignKey(
         "Category", on_delete=models.CASCADE, null=True, blank=True
     )
-    description = models.TextField()
-    technology = models.CharField(max_length=20, blank=True)
-    image = models.ImageField(upload_to="projects/", blank=True)
-    url_site = models.URLField(blank=True)
-    url_github = models.URLField(blank=True)
+    resume = models.TextField()
+    body = models.TextField()
+    publish = models.DateTimeField(default=timezone.now)
+    created = models.DateTimeField(auto_now_add=True)
+    updated = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ["-publish"]
+        indexes = [models.Index(fields=["-publish"])]
 
     def __str__(self):
         return self.title

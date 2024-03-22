@@ -59,6 +59,7 @@ def about(request):
     return TemplateResponse(request, "pages/about/about.html")
 
 
+@home_router.get(url_name="projects", url_path="projects/")
 def projects_list(request):
     projects = Project.objects.all()
     categories = Category.objects.all()
@@ -69,6 +70,10 @@ def projects_list(request):
     )
 
 
-def project_detail(request, id):
-    project = get_object_or_404(Project, id=id)
+@home_router.get(
+    url_name="project_detail",
+    url_path="projects/<slug:project>/",
+)
+def project_detail(request, project):
+    project = get_object_or_404(Project, slug=project)
     return render(request, "pages/project/detail.html", {"project": project})

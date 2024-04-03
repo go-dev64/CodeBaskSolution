@@ -16,9 +16,14 @@ ALLOWED_HOSTS = []
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
-    "default": env.db(
-        default="sqlite:///db.sqlite3",
-    )
+    "default": {
+        "ENGINE": env("SQL_ENGINE"),
+        "NAME": env("SQL_DATABASE"),
+        "USER": env("SQL_USER"),
+        "PASSWORD": env("SQL_PASSWORD"),
+        "HOST": env("SQL_HOST"),
+        "PORT": env("SQL_PORT"),
+    }
 }
 
 # Default to dummy email backend. Configure dev/production/local backend

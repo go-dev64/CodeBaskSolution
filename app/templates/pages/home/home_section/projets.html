@@ -1,44 +1,6 @@
-<section id="work">
-    <div class="container">
-        <header class="mb-5 text-center">
-            <div class="row mb-5 wow fadeInUp">
-                <div class="col-lg-8 mx-auto">
-                    <h2 class="heading">Nos projets</h2>
-                </div>
-            </div>
-            <p class="lead wow fadeInUp" data-wow-delay="0.1s">Découvrez nos derniers projets réalisés pour nos clients.</p>
-        </header>
-        <div class="filter mb-4 wow fadeInUp" data-wow-delay="0.25s">
-            <button class="filter-btn" type="button" data-filter="all">All</button>
-            {% for category in categories %}
-                <button class="filter-btn" type="button" data-filter=".{{ category.name }}">{{ category.name }}</button>
-            {% endfor %}
-        </div>
-        <div class="row gy-4" id="content">
-            {% for project in projects %}
-                <div class="col-lg-3 col-md-6 mix wow fadeInUp webdesign"
-                     data-wow-delay="0s"
-                     data-order="1">
-                    <a class="d-block work-item"
-                       href="#"
-                       data-bs-toggle="modal"
-                       data-bs-target="#item1Modal">
-                        <img class="img-fluid w-100"
-                             src="{{ project.image }}"
-                             alt="{{ project.title }}">
-                        <div class="overlay">
-                            <h3 class="work-heading">{{ project.title }}</h3>
-                            <p>{{ project.description }}</p>
-                        </div>
-                    </a>
-                </div>
-            {% endfor %}
-        </div>
-    </div>
-</section>
 {% load webpack_loader static %}
 <!-- PROJECT SECTION -->
-<section id="about">
+<section id="work">
     <div class="container text-center">
         <header class="mb-3">
             <h2 class="heading">Nos projets</h2>
@@ -48,11 +10,8 @@
                 <img class="rounded float-end img-fluid mh-100" src="{% static "vendors/images/7094814.jpg" %}" alt="un environnement de travail collaboratif axé sur le développement de logiciels. Au premier plan, une grande main tape sur un clavier devant un écran d'ordinateur affichant du code. Autour, des individus engagés dans diverses activités professionnelles : une équipe élabore des stratégies autour d'un tableau blanc, un individu programme sur un ordinateur de bureau, un autre est en pleine réflexion créative, et un troisième est assis sur une pile de livres étiquetés "CODE". Des icônes de réseaux sans fil, de loupe, de rouages, et une ampoule symbolisant l'idéation sont également visibles. L'ensemble crée une scène dynamique de productivité et d'innovation dans le domaine du développement informatique.">
             </div>
             <div class="col-lg-6">
-                <p>Découvrez nos derniers projets réalisés pour nos clients.</p>
+                <button type="button" class="btn btn-outline-secondary">Venez découvrir nos derniers projets réalisés.</button>
             </div>
         </div>
-        <button type="button" class="btn btn-outline-secondary">
-            Venez découvrir notre méthodologie et nos domaines d'expertise.
-        </button>
     </div>
 </section>

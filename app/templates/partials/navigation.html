@@ -22,19 +22,21 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="nav navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link text-uppercase" href="#intro">Acceuil</a>
+                    <a class="nav-link text-uppercase" href="{% url "pages:home" %}#intro">Acceuil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-uppercase" href="#about">Notre agence</a>
+                    <a class="nav-link text-uppercase" href="{% url "pages:home" %}#about">Notre agence</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-uppercase" href="#services">Nos Services</a>
+                    <a class="nav-link text-uppercase"
+                       href="{% url "pages:home" %}#services">Nos Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-uppercase" href="#work">Nos Projets</a>
+                    <a class="nav-link text-uppercase" href="{% url "pages:home" %}#work">Nos Projets</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-uppercase" href="#contact-form">Contactez-nous</a>
+                    <a class="nav-link text-uppercase"
+                       href="{% url "pages:home" %}#contact-form">Contactez-nous</a>
                 </li>
             </ul>
         </div>

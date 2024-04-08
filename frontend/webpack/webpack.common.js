@@ -16,7 +16,7 @@ const getEntryObject = () => {
 module.exports = {
   entry: getEntryObject(),
   output: {
-    path: Path.join(__dirname, "../../app/static/"),
+    path: Path.join(__dirname, "../../static/"),
     filename: "js/[name].js",
     publicPath: "/static/",
     assetModuleFilename: "[path][name][ext]",

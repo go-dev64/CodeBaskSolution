@@ -139,7 +139,7 @@ STATICFILES_DIRS = [BASE_DIR / "static"]
 
 # Configuration of python-webpack-boilerplate
 WEBPACK_LOADER = {
-    "MANIFEST_FILE": APPS_DIR / "static" / "manifest.json",
+    "MANIFEST_FILE": BASE_DIR / "static" / "manifest.json",
 }
 
 MEDIA_ROOT = BASE_DIR / "media"

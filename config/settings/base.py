@@ -134,8 +134,8 @@ STATICFILES_FINDERS = [
 STATICFILES_STORAGE = "django.contrib.staticfiles.storage.ManifestStaticFilesStorage"
 
 STATIC_URL = "static/"
-STATIC_ROOT = BASE_DIR / "app" / "static"
-STATICFILES_DIRS = [APPS_DIR / "app" / "static"]
+STATIC_ROOT = BASE_DIR / "staticfiles"
+STATICFILES_DIRS = [BASE_DIR / "static"]
 
 # Configuration of python-webpack-boilerplate
 WEBPACK_LOADER = {

@@ -15,7 +15,6 @@ django-template-partials = "*"
 markdown = "*"
 flake8 = "*"
 redis = "*"
-uwsgi = "*"
 psycopg2-binary = "*"
 django-redisboard = "*"
 

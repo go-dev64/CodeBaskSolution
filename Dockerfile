@@ -1,39 +1,30 @@
-# Pull official base Python Docker image
-FROM python:3.11.9
-# Set environment variables
-ENV PYTHONDONTWRITEBYTECODE=1
-ENV PYTHONUNBUFFERED=1
+# pull official base image
+FROM python:3.11.4-slim-buster
 
-# create directory for the app user
-RUN mkdir -p /home/app
+# set work directory
+WORKDIR /usr/src/app
 
-# create the app user
-RUN addgroup --system app && adduser --system --group app
+# set environment variables
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
 
-# create the appropriate directories
-ENV HOME=/home/app
-ENV APP_HOME=/home/app/web
-RUN mkdir $APP_HOME
-
-# Set work directory
-WORKDIR $APP_HOME
-
-# Install system dependencies
-RUN apt-get update && \
-    apt-get install -y --no-install-recommends gcc netcat-openbsd && \
-    rm -rf /var/lib/apt/lists/*
+# Install netcat (nc)
+RUN apt-get update && apt-get install -y netcat && rm -rf /var/lib/apt/lists/*
 
 
-
-# Install dependencies
+# install dependencies
 RUN pip install --upgrade pip
-COPY requirements.txt .
-RUN pip install -r requirements.txt
-# Copy the Django project
-COPY . $APP_HOME
+COPY requirements-dev.txt .
+RUN pip install -r requirements-dev.txt
 
-# chown all the files to the app user
-RUN chown -R app:app $APP_HOME
+# copy entrypoint.sh
+COPY entrypoint.sh /usr/src/app/
+RUN sed -i 's/\r$//g' /usr/src/app/entrypoint.sh
+RUN chmod +x /usr/src/app/entrypoint.sh
 
-# change to the app user
-USER app
+# copy project
+COPY . .
+
+
+# run entrypoint.sh
+ENTRYPOINT ["/usr/src/app/entrypoint.sh"]

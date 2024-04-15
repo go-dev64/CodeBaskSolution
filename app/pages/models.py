@@ -4,6 +4,20 @@ from django.utils import timezone
 
 
 class Project(models.Model):
+    """
+    Represents a project.
+
+    Attributes:
+        title (str): The title of the project.
+        slug (str): The slug field for the project's URL.
+        category (Category): The category of the project.
+        resume (str): A summary of the project.
+        body (str): The main content of the project.
+        publish (datetime): The date and time when the project was published.
+        created (datetime): The date and time when the project was created.
+        updated (datetime): The date and time when the project was last updated.
+    """
+
     title = models.CharField(max_length=250)
     slug = models.SlugField(max_length=250, unique_for_date="publish")
     category = models.ForeignKey(
@@ -23,10 +37,17 @@ class Project(models.Model):
         return self.title
 
     def get_absolute_url(self):
-        return reverse("blog:post_detail", args=[self.slug])
+        return reverse("pages:project_detail", args=[self.slug])
 
 
 class Category(models.Model):
+    """
+    Represents a category.
+
+    Attributes:
+        name (str): The name of the category.
+    """
+
     name = models.CharField(max_length=100)
 
     def __str__(self):
@@ -34,6 +55,17 @@ class Category(models.Model):
 
 
 class ContactSubmission(models.Model):
+    """
+    Represents a contact submission.
+
+    Attributes:
+        first_name (str): The first name of the submitter.
+        last_name (str): The last name of the submitter.
+        subject (str): The subject of the submission.
+        email (str): The email address of the submitter.
+        message (str): The message of the submission.
+    """
+
     first_name = models.CharField(max_length=100)
     last_name = models.CharField(max_length=100)
     subject = models.CharField(max_length=100)

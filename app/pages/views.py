@@ -45,7 +45,7 @@ def hx__submit_contact_form(request):
             request,
             "pages/home/hx/submit-contact-form--error.html",
             {"form": form},
-            headers={"HX-Swap": "none"},
+            headers={"HX-Swap": "none"},  # type: ignore
         )
     form.save()
     messages.success(request, "Votre demande a bien été envoyé!")
@@ -54,26 +54,20 @@ def hx__submit_contact_form(request):
     )
 
 
-@home_router.get(url_name="about")
 def about(request):
     return TemplateResponse(request, "pages/about/about.html")
 
 
-@home_router.get(url_name="projects", url_path="projects/")
 def projects_list(request):
-    projects = Project.objects.all()
+    projects_list = Project.objects.all()
     categories = Category.objects.all()
     return render(
         request,
         "pages/project/projects_list.html",
-        {"categories": categories, "projects": projects},
+        {"categories": categories, "projects_list": projects_list},
     )
 
 
-@home_router.get(
-    url_name="project_detail",
-    url_path="projects/<slug:project>/",
-)
-def project_detail(request, project):
-    project = get_object_or_404(Project, slug=project)
+def project_detail(request, slug):
+    project = get_object_or_404(Project, slug=slug)
     return render(request, "pages/project/detail.html", {"project": project})

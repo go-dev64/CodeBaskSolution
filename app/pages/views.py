@@ -54,10 +54,16 @@ def hx__submit_contact_form(request):
     )
 
 
+@home_router.get(
+    url_name="about",
+)
 def about(request):
     return TemplateResponse(request, "pages/about/about.html")
 
 
+@home_router.get(
+    url_name="projects_list",
+)
 def projects_list(request):
     projects_list = Project.objects.all()
     categories = Category.objects.all()
@@ -68,6 +74,10 @@ def projects_list(request):
     )
 
 
+@home_router.get(
+    url_name="project_detail",
+    url_path="projects/<slug:slug>/",
+)
 def project_detail(request, slug):
     project = get_object_or_404(Project, slug=slug)
     return render(request, "pages/project/detail.html", {"project": project})

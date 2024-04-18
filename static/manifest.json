@@ -1,41 +1,37 @@
 {
-  "app.css": "/static/css/app.8676bbd1eb7469c474b2.css",
-  "app.js": "/static/js/app.f8d7ebbd.js",
-  "css/app.8676bbd1eb7469c474b2.css.map": "/static/css/app.8676bbd1eb7469c474b2.css.map",
+  "app.css": "http://localhost:9091/css/app.css",
+  "app.js": "http://localhost:9091/js/app.js",
   "entrypoints": {
     "app": {
       "assets": {
         "js": [
-          "/static/js/runtime.6f76a6e5.js",
-          "/static/js/740.4c7e34b1.js",
-          "/static/js/app.f8d7ebbd.js"
+          "http://localhost:9091/js/runtime.js",
+          "http://localhost:9091/js/vendors-node_modules_hotwired_stimulus-webpack-helpers_dist_stimulus-webpack-helpers_js-node_-3b6ba2.js",
+          "http://localhost:9091/js/app.js"
         ],
         "css": [
-          "/static/css/app.8676bbd1eb7469c474b2.css"
+          "http://localhost:9091/css/app.css"
         ]
       }
     }
   },
-  "js/740.4c7e34b1.js": "/static/js/740.4c7e34b1.js",
-  "js/740.4c7e34b1.js.LICENSE.txt": "/static/js/740.4c7e34b1.js.LICENSE.txt",
-  "js/740.4c7e34b1.js.map": "/static/js/740.4c7e34b1.js.map",
-  "js/app.f8d7ebbd.js.map": "/static/js/app.f8d7ebbd.js.map",
-  "js/runtime.6f76a6e5.js.map": "/static/js/runtime.6f76a6e5.js.map",
-  "runtime.js": "/static/js/runtime.6f76a6e5.js",
-  "vendors/.gitkeep": "/static/vendors/.gitkeep",
-  "vendors/images/.gitkeep": "/static/vendors/images/.gitkeep",
-  "vendors/images/33290.jpg": "/static/vendors/images/33290.jpg",
-  "vendors/images/3459559.jpg": "/static/vendors/images/3459559.jpg",
-  "vendors/images/5995339.jpg": "/static/vendors/images/5995339.jpg",
-  "vendors/images/7094814.jpg": "/static/vendors/images/7094814.jpg",
-  "vendors/images/7122676.jpg": "/static/vendors/images/7122676.jpg",
-  "vendors/images/api.png": "/static/vendors/images/api.png",
-  "vendors/images/automatisation.png": "/static/vendors/images/automatisation.png",
-  "vendors/images/code.png": "/static/vendors/images/code.png",
-  "vendors/images/e-commerce.png": "/static/vendors/images/e-commerce.png",
-  "vendors/images/logiciel.png": "/static/vendors/images/logiciel.png",
-  "vendors/images/parallax.jpg": "/static/vendors/images/parallax.jpg",
-  "vendors/images/sensible.png": "/static/vendors/images/sensible.png",
-  "vendors/images/site.png": "/static/vendors/images/site.png",
-  "vendors/js/htmx.js": "/static/vendors/js/htmx.js"
+  "js/vendors-node_modules_hotwired_stimulus-webpack-helpers_dist_stimulus-webpack-helpers_js-node_-3b6ba2.js": "http://localhost:9091/js/vendors-node_modules_hotwired_stimulus-webpack-helpers_dist_stimulus-webpack-helpers_js-node_-3b6ba2.js",
+  "runtime.js": "http://localhost:9091/js/runtime.js",
+  "vendors/.gitkeep": "http://localhost:9091/vendors/.gitkeep",
+  "vendors/images/.gitkeep": "http://localhost:9091/vendors/images/.gitkeep",
+  "vendors/images/33290.jpg": "http://localhost:9091/vendors/images/33290.jpg",
+  "vendors/images/3459559.jpg": "http://localhost:9091/vendors/images/3459559.jpg",
+  "vendors/images/5995339.jpg": "http://localhost:9091/vendors/images/5995339.jpg",
+  "vendors/images/7094814.jpg": "http://localhost:9091/vendors/images/7094814.jpg",
+  "vendors/images/7122676.jpg": "http://localhost:9091/vendors/images/7122676.jpg",
+  "vendors/images/agile.svg": "http://localhost:9091/vendors/images/agile.svg",
+  "vendors/images/api.png": "http://localhost:9091/vendors/images/api.png",
+  "vendors/images/automatisation.png": "http://localhost:9091/vendors/images/automatisation.png",
+  "vendors/images/code.png": "http://localhost:9091/vendors/images/code.png",
+  "vendors/images/e-commerce.png": "http://localhost:9091/vendors/images/e-commerce.png",
+  "vendors/images/logiciel.png": "http://localhost:9091/vendors/images/logiciel.png",
+  "vendors/images/parallax.jpg": "http://localhost:9091/vendors/images/parallax.jpg",
+  "vendors/images/sensible.png": "http://localhost:9091/vendors/images/sensible.png",
+  "vendors/images/site.png": "http://localhost:9091/vendors/images/site.png",
+  "vendors/js/htmx.js": "http://localhost:9091/vendors/js/htmx.js"
 }

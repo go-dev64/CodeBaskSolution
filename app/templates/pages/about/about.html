@@ -1,37 +1,50 @@
 {% extends "base.html" %}
-{% load crispy_forms_tags %}
+{% load static %}
 {% block title %}
     Qui sommes nous? | codebasksolution
 {% endblock title %}
 {% block content %}
-    <section class="container mt-5">
-        <div class="row featurette ">
-            <div class="col-md-7">
-                <h2 class="featurette-heading fw-normal lh-1">
-                    Notre Approche et Philosophie <span class="text-body-secondary"></span>
-                </h2>
-                <p>
-                    Chez <strong>Code Bask Solution</strong>, nous croyons fermement que la clarté, la flexibilité et la performance sont les piliers d'un développement logiciel réussi. C'est pourquoi notre méthode de travail s'articule autour de l'agilité et du pragmatisme.
+    {% include "pages/home/home_section/intro.html" %}
+    <section class=" text-center container">
+        <div class="px-4 py-3 my-2 text-center">
+            <h1 class="fw-light">
+                <span class="text-body-secondary">Notre objectif:</span> Simplicité et efficité!
+            </h1>
+            <div class="col-lg-6 mx-auto">
+                <p class="mb-4">
+                    Chez <strong>Code Bask Solution</strong>, notre processus de développement logiciel est pensé pour être à la fois structuré et flexible, afin de s'adapter parfaitement aux exigences et aux contraintes de chaque projet. Voici comment nous transformons une idée en solution logicielle performante et sur mesure
                 </p>
-                <p>
-                    Nous adoptons les méthodologies agiles pour nous assurer que nos projets sont gérés de manière à favoriser une collaboration étroite avec nos clients, une adaptation rapide aux changements, et une livraison continue de valeur. En travaillant en sprints, nous offrons une transparence totale à nos clients et leur permettons de voir l'évolution de leur projet étape par étape, garantissant ainsi que le produit final correspond exactement à leurs attentes.
-                </p>
-            </div>
-            <div class="col-md-5">
-                <p>text</p>
             </div>
         </div>
-        <hr class="featurette-divider">
-        <div class="row featurette">
-            <div class="col-md-7">
-                <h2 class="featurette-heading fw-normal lh-1">
-                    <span class="text-body-secondary">Notre objectif:</span> Simplicité et efficité!
-                </h2>
-                <p>
-                    notre processus de développement logiciel est pensé pour être à la fois structuré et flexible, afin de s'adapter parfaitement aux exigences et aux contraintes de chaque projet. Voici comment nous transformons une idée en solution logicielle performante et sur mesure
-                </p>
+        <div class="container text-center mt-5">
+            <header class="mt-4">
+                <h2 class="heading">Notre Approche</h2>
+            </header>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <p>
+                        Nous privilégions une approche Agile et le Test-Driven Development (TDD) dès les premières étapes de nos projets de développement de logiciels et d'applications, assurant que chaque fonctionnalité soit parfaitement alignée avec les attentes des clients et rigoureusement testée. Notre processus de développement est itératif, comprenant des cycles de conception, de développement, de tests et de déploiement qui favorisent une interaction étroite avec nos clients. Cette méthodologie nous permet non seulement de répondre avec précision et flexibilité aux besoins actuels, mais aussi de préparer nos solutions pour les exigences futures. Nous nous engageons à construire des relations durables avec nos clients et à développer des produits sur-mesure, sécurisés et adaptés aux évolutions constantes du marché.
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <img class="rounded float-end img-fluid mh-100" src="{% static "vendors/images/agile.svg" %}" alt="un environnement de travail collaboratif axé sur le développement de logiciels. Au premier plan, une grande main tape sur un clavier devant un écran d'ordinateur affichant du code. Autour, des individus engagés dans diverses activités professionnelles : une équipe élabore des stratégies autour d'un tableau blanc, un individu programme sur un ordinateur de bureau, un autre est en pleine réflexion créative, et un troisième est assis sur une pile de livres étiquetés "CODE". Des icônes de réseaux sans fil, de loupe, de rouages, et une ampoule symbolisant l'idéation sont également visibles. L'ensemble crée une scène dynamique de productivité et d'innovation dans le domaine du développement informatique.">
+                </div>
             </div>
-            <div class="col-md-5"></div>
+        </div>
+        <div class="container text-center mt-5">
+            <header class="mt-4">
+                <h2 class="heading">Nos Technologie</h2>
+            </header>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <p>
+                        Nous privilégions une approche Agile et le Test-Driven Development (TDD) dès les premières étapes de nos projets de développement de logiciels et d'applications, assurant que chaque fonctionnalité soit parfaitement alignée avec les attentes des clients et rigoureusement testée. Notre processus de développement est itératif, comprenant des cycles de conception, de développement, de tests et de déploiement qui favorisent une interaction étroite avec nos clients. Cette méthodologie nous permet non seulement de répondre avec précision et flexibilité aux besoins actuels, mais aussi de préparer nos solutions pour les exigences futures. Nous nous engageons à construire des relations durables avec nos clients et à développer des produits sur-mesure, sécurisés et adaptés aux évolutions constantes du marché.
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <img class="rounded float-end img-fluid mh-100" src="{% static "vendors/images/agile.svg" %}" alt="un environnement de travail collaboratif axé sur le développement de logiciels. Au premier plan, une grande main tape sur un clavier devant un écran d'ordinateur affichant du code. Autour, des individus engagés dans diverses activités professionnelles : une équipe élabore des stratégies autour d'un tableau blanc, un individu programme sur un ordinateur de bureau, un autre est en pleine réflexion créative, et un troisième est assis sur une pile de livres étiquetés "CODE". Des icônes de réseaux sans fil, de loupe, de rouages, et une ampoule symbolisant l'idéation sont également visibles. L'ensemble crée une scène dynamique de productivité et d'innovation dans le domaine du développement informatique.">
+                </div>
+            </div>
         </div>
     </section>
 {% endblock content %}

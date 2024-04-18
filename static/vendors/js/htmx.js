@@ -1,1 +1,2 @@
-window.htmx=require("htmx.org");
+// Code: htmx.js
+window.htmx = require('htmx.org');

@@ -13223,7 +13223,7 @@ textarea.form-control-lg {
   }
 }
 /*
-* 
+*
 * ==========================================
 * GENERAL
 * ==========================================
@@ -13275,7 +13275,7 @@ section {
 }
 
 /*
-* 
+*
 * ==========================================
 * NAVBAR
 * ==========================================
@@ -13292,7 +13292,7 @@ section {
 }
 
 /*
-* 
+*
 * ==========================================
 * INTRO
 * ==========================================
@@ -13345,7 +13345,7 @@ section {
 * ===================================================
 */
 /*
-   Text utils 
+   Text utils
    ------------------------
 */
 .text-uppercase {
@@ -13383,7 +13383,7 @@ section {
 }
 
 /*
-    Rounded corners - lg, sm 
+    Rounded corners - lg, sm
    ------------------------
 */
 .rounded-lg {
@@ -13432,7 +13432,7 @@ section {
   }
 }
 /*
-    Opacity helpers - .opacity-[1-9]   
+    Opacity helpers - .opacity-[1-9]
     ------------------------
 */
 .opacity-1 {
@@ -13476,7 +13476,7 @@ section {
 }
 
 /*
-    Z-index helpers - .z-index-[10-50]   
+    Z-index helpers - .z-index-[10-50]
     ------------------------
 */
 .z-index-10 {
@@ -14441,7 +14441,7 @@ STYLE SWITCHER FOR DEMO
     white-space: pre;
     font-size: 2,5rem;
   }
-  
+
  #textAccroche {
     font-family: 'Courier New', monospace;
     font-size: 1,5rem;
@@ -14455,7 +14455,7 @@ STYLE SWITCHER FOR DEMO
   #cursor {
     animation: blink 1s infinite;
   }
-  
+
   @keyframes blink {
     0% { opacity: 0; }
     50% { opacity: 1; }

@@ -7,19 +7,26 @@ class Migration(migrations.Migration):
 
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='Project',
+            name="Project",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('title', models.CharField(max_length=100)),
-                ('description', models.TextField()),
-                ('technology', models.CharField(blank=True, max_length=20)),
-                ('image', models.ImageField(blank=True, upload_to='projects/')),
-                ('url', models.URLField(blank=True)),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("title", models.CharField(max_length=100)),
+                ("description", models.TextField()),
+                ("technology", models.CharField(blank=True, max_length=20)),
+                ("image", models.ImageField(blank=True, upload_to="projects/")),
+                ("url", models.URLField(blank=True)),
             ],
         ),
     ]

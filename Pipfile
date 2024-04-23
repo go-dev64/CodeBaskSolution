@@ -17,6 +17,8 @@ flake8 = "*"
 redis = "*"
 psycopg2-binary = "*"
 django-redisboard = "*"
+ipython = "*"
+django-rich = "*"
 
 [dev-packages]
 pytest = "*"

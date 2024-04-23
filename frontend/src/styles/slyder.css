@@ -1,0 +1,22 @@
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    white-space: nowrap; /* Assure que tous les éléments sont sur une seule ligne */
+    animation: slide 20s linear infinite;
+}
+
+.slide {
+    display: inline-block;
+    width: 300px; /* Largeur de chaque slide */
+    text-align: center;
+    vertical-align: top;
+}
+
+@keyframes slide {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
+}

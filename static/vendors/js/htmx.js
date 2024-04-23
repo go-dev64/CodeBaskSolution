@@ -1,2 +1,1 @@
-// Code: htmx.js
-window.htmx = require('htmx.org');
+window.htmx=require("htmx.org");

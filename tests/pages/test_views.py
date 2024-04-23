@@ -39,7 +39,6 @@ class TesTHomeView:
 
 
 class TestAboutView:
-
     def test_about(self):
         client = Client()
         response = client.get(reverse("pages:about"))

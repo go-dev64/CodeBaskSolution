@@ -7,64 +7,68 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('pages', '0003_category_contactsubmission_project_category'),
+        ("pages", "0003_category_contactsubmission_project_category"),
     ]
 
     operations = [
         migrations.AlterModelOptions(
-            name='project',
-            options={'ordering': ['-publish']},
+            name="project",
+            options={"ordering": ["-publish"]},
         ),
         migrations.RenameField(
-            model_name='project',
-            old_name='description',
-            new_name='boy',
+            model_name="project",
+            old_name="description",
+            new_name="boy",
         ),
         migrations.RemoveField(
-            model_name='project',
-            name='image',
+            model_name="project",
+            name="image",
         ),
         migrations.RemoveField(
-            model_name='project',
-            name='technology',
+            model_name="project",
+            name="technology",
         ),
         migrations.RemoveField(
-            model_name='project',
-            name='url_github',
+            model_name="project",
+            name="url_github",
         ),
         migrations.RemoveField(
-            model_name='project',
-            name='url_site',
+            model_name="project",
+            name="url_site",
         ),
         migrations.AddField(
-            model_name='project',
-            name='created',
-            field=models.DateTimeField(auto_now_add=True, default=django.utils.timezone.now),
+            model_name="project",
+            name="created",
+            field=models.DateTimeField(
+                auto_now_add=True, default=django.utils.timezone.now
+            ),
             preserve_default=False,
         ),
         migrations.AddField(
-            model_name='project',
-            name='publish',
+            model_name="project",
+            name="publish",
             field=models.DateTimeField(default=django.utils.timezone.now),
         ),
         migrations.AddField(
-            model_name='project',
-            name='slug',
-            field=models.SlugField(default='test', max_length=250),
+            model_name="project",
+            name="slug",
+            field=models.SlugField(default="test", max_length=250),
             preserve_default=False,
         ),
         migrations.AddField(
-            model_name='project',
-            name='updated',
+            model_name="project",
+            name="updated",
             field=models.DateTimeField(auto_now=True),
         ),
         migrations.AlterField(
-            model_name='project',
-            name='title',
+            model_name="project",
+            name="title",
             field=models.CharField(max_length=250),
         ),
         migrations.AddIndex(
-            model_name='project',
-            index=models.Index(fields=['-publish'], name='pages_proje_publish_faadc9_idx'),
+            model_name="project",
+            index=models.Index(
+                fields=["-publish"], name="pages_proje_publish_faadc9_idx"
+            ),
         ),
     ]

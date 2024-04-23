@@ -25,8 +25,8 @@ module.exports = merge(common, {
       writeToDisk: true,
     },
     watchFiles: [
-      Path.join(__dirname, '../../app/**/*.py'),
-      Path.join(__dirname, '../../app/**/*.html'),
+      Path.join(__dirname, "../../app/**/*.py"),
+      Path.join(__dirname, "../../app/**/*.html"),
     ],
   },
   plugins: [

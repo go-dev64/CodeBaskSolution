@@ -1,9 +1,9 @@
 import { Controller } from "@hotwired/stimulus";
-import Alert from 'bootstrap/js/dist/alert';
+import Alert from "bootstrap/js/dist/alert";
 
 export default class extends Controller {
-    connect() {
-        const alert = new Alert(this.element);
-        setTimeout(() => alert.close(), 2500);
-    }
+  connect() {
+    const alert = new Alert(this.element);
+    setTimeout(() => alert.close(), 2500);
+  }
 }

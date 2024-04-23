@@ -210,18 +210,32 @@ CHANNEL_LAYERS = {
 LOGGING = {
     "version": 1,
     "disable_existing_loggers": False,
+    "filters": {
+        "require_debug_true": {
+            "()": "django.utils.log.RequireDebugTrue",
+        },
+    },
+    "formatters": {
+        "rich": {"datefmt": "[%X]"},
+    },
     "handlers": {
-        "file": {
+        "console": {
+            "class": "rich.logging.RichHandler",
+            "filters": ["require_debug_true"],
+            "formatter": "rich",
             "level": "DEBUG",
-            "class": "logging.FileHandler",
-            "filename": "logging.log",
+            "rich_tracebacks": True,
+            "tracebacks_show_locals": True,
         },
     },
     "loggers": {
         "django": {
-            "handlers": ["file"],
-            "level": "DEBUG",
-            "propagate": True,
+            "handlers": [],
+            "level": "INFO",
         },
+    },
+    "root": {
+        "handlers": ["console"],
+        "level": "INFO",
     },
 }

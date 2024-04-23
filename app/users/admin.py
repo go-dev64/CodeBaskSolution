@@ -5,6 +5,7 @@ from .forms import CustomUserChangeForm, CustomUserCreationForm
 from .models import User
 
 
+@admin.register(User)
 class CustomUserAdmin(UserAdmin):
     add_form = CustomUserCreationForm
     form = CustomUserChangeForm
@@ -60,6 +61,3 @@ class CustomUserAdmin(UserAdmin):
     )
     search_fields = ("email",)
     ordering = ("email",)
-
-
-admin.site.register(User, CustomUserAdmin)

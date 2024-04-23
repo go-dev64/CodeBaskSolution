@@ -1,18 +1,18 @@
 {% extends "base.html" %}
 {% load static %}
 {% block title %}
-    {{ project.title }} | codebasksolution
+  {{ project.title }} | codebasksolution
 {% endblock title %}
 {% block content %}
-    {% include "pages/home/home_section/intro.html" %}
-    <div class="card mb-3">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">{{ project.title }}</h5>
-            <p class="card-text">{{ project.body }}</p>
-            <p class="card-text">
-                <small class="text-muted">{{ project.created }}</small>
-            </p>
-        </div>
+  {% include "pages/home/home_section/intro.html" %}
+  <div class="card mb-3">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{ project.title }}</h5>
+      <p class="card-text">{{ project.body }}</p>
+      <p class="card-text">
+        <small class="text-muted">{{ project.created }}</small>
+      </p>
     </div>
+  </div>
 {% endblock content %}

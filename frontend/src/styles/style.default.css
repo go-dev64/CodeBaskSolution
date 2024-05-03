@@ -15105,4 +15105,17 @@ STYLE SWITCHER FOR DEMO
   }
 }
 
+.logo {
+  height: 100px;
+  width: auto;
+  margin: 1rem;
+}
+
+@media (max-width: 1200px) {
+  .logo {
+    height: 60px;
+    margin: auto;
+  }
+}
+
 /* eslint-enable */

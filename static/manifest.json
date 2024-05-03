@@ -19,6 +19,7 @@
   "runtime.js": "http://localhost:9091/js/runtime.js",
   "vendors/.gitkeep": "http://localhost:9091/vendors/.gitkeep",
   "vendors/images/.gitkeep": "http://localhost:9091/vendors/images/.gitkeep",
+  "vendors/images/33290.jpg": "http://localhost:9091/vendors/images/33290.jpg",
   "vendors/images/3459559.jpg": "http://localhost:9091/vendors/images/3459559.jpg",
   "vendors/images/7094814.jpg": "http://localhost:9091/vendors/images/7094814.jpg",
   "vendors/images/agile.svg": "http://localhost:9091/vendors/images/agile.svg",

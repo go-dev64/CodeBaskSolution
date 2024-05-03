@@ -18,6 +18,7 @@
   "js/vendors-node_modules_hotwired_stimulus-webpack-helpers_dist_stimulus-webpack-helpers_js-node_-3b6ba2.js": "http://localhost:9091/js/vendors-node_modules_hotwired_stimulus-webpack-helpers_dist_stimulus-webpack-helpers_js-node_-3b6ba2.js",
   "runtime.js": "http://localhost:9091/js/runtime.js",
   "vendors/.gitkeep": "http://localhost:9091/vendors/.gitkeep",
+  "vendors/gif/projet-en-cour.gif": "http://localhost:9091/vendors/gif/projet-en-cour.gif",
   "vendors/images/.gitkeep": "http://localhost:9091/vendors/images/.gitkeep",
   "vendors/images/33290.jpg": "http://localhost:9091/vendors/images/33290.jpg",
   "vendors/images/3459559.jpg": "http://localhost:9091/vendors/images/3459559.jpg",

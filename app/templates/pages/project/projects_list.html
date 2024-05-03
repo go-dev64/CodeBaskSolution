@@ -6,20 +6,20 @@
 {% endblock title %}
 {% block content %}
   {% include "pages/home/home_section/intro.html" %}
-  <div class="container mt-5">
-    <header class="mb-5 text-center">
-      <div class="row mb-5 wow fadeInUp">
-        <div class="col-lg-8 mx-auto">
-          <h2 class="heading">Nos projets</h2>
+  {% if projects_list %}
+    <div class="container mt-5">
+      <header class="mb-5 text-center">
+        <div class="row mb-5 wow fadeInUp">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="heading">Nos projets</h2>
+          </div>
         </div>
-      </div>
-      <p class="lead wow fadeInUp" data-wow-delay="0.1s">Découvrez nos derniers projets réalisés pour nos clients.</p>
-    </header>
-  </div>
-  <div class="album py-5 bg-body-tertiary">
-    <div class="container">
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        {% if projects_list %}
+        <p class="lead wow fadeInUp" data-wow-delay="0.1s">Découvrez nos derniers projets réalisés pour nos clients.</p>
+      </header>
+    </div>
+    <div class="album py-5 bg-body-tertiary">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
           {% for project in projects_list %}
             <div class="col">
               <div class="card shadow-sm h-100">
@@ -37,12 +37,12 @@
               </div>
             </div>
           {% endfor %}
-        {% else %}
-          <div class="col">
-            <p>Aucun projet disponible pour le moment.</p>
-          </div>
-        {% endif %}
+        </div>
       </div>
     </div>
-  </div>
+  {% else %}
+    <div class="container text-center">
+      <img class="projet-en-cour" src="{% static "vendors/gif/projet-en-cour.gif" %}" alt="" height="800px" width="auto">
+    </div>
+  {% endif %}
 {% endblock content %}

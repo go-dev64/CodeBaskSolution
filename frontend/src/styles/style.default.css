@@ -13951,6 +13951,7 @@ section {
 .intro {
   padding-top: 80px;
   min-height: 60vh;
+  background: url("../../vendors/images/parallax.jpg") no-repeat center center;
 }
 
 .intro-text,

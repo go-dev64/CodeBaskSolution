@@ -11,7 +11,7 @@
       {% endblock title %}
     </title>
     {% block head_styles %}
-      {% stylesheet_pack "app" %}
+      {% stylesheet_pack "app" attrs="defer" %}
     {% endblock head_styles %}
     {% block head_scripts %}
       {% javascript_pack "app" attrs="defer" %}

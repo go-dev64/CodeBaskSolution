@@ -1,2 +1,6 @@
-<button hx-get="{% url 'pages:hx-display-form' %}" hx-target="#contact-content" hx-swap="outerHTML transition:true" hx-trigger="click delay:200ms" class="btn btn-primary mb-4" {{ button_attributes }}>Contactez-nous
-</button>
+{% load static %}
+<img class="rounded float-end img-fluid mh-100" src="{% static "vendors/images/3459559.jpg" %}" alt="un environnement de travail collaboratif axé sur le développement de logiciels. Au premier plan, une grande main tape sur un clavier devant un écran d'ordinateur affichant du code. Autour, des individus engagés dans diverses activités professionnelles : une équipe élabore des stratégies autour d'un tableau blanc, un individu programme sur un ordinateur de bureau, un autre est en pleine réflexion créative, et un troisième est assis sur une pile de livres étiquetés "CODE". Des icônes de réseaux sans fil, de loupe, de rouages, et une ampoule symbolisant l'idéation sont également visibles. L'ensemble crée une scène dynamique de productivité et d'innovation dans le domaine du développement informatique." height="100" width="auto">
+<div class="col-md-10 mx-auto col-lg-5">
+  <button hx-get="{% url 'pages:hx-display-form' %}" hx-target="#contact-content" hx-swap="innerHTML transition:true" hx-trigger="click delay:200ms" class="btn btn-primary mb-4" {{ button_attributes }}>Contactez-nous
+  </button>
+</div>

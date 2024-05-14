@@ -1,5 +1,3 @@
-{% load static %}
-{% load crispy_forms_tags %}
 <!-- START CONTACT SECTION -->
 <div id="contact-form"
      class="container col-xl-10 col-xxl-8 px-4 py-5 text-center">
@@ -12,8 +10,7 @@
       </p>
     </div>
     <div id="contact-content" class="col-lg-6">
-      <img class="rounded float-end img-fluid mh-100" src="{% static "vendors/images/3459559.jpg" %}" alt="un environnement de travail collaboratif axé sur le développement de logiciels. Au premier plan, une grande main tape sur un clavier devant un écran d'ordinateur affichant du code. Autour, des individus engagés dans diverses activités professionnelles : une équipe élabore des stratégies autour d'un tableau blanc, un individu programme sur un ordinateur de bureau, un autre est en pleine réflexion créative, et un troisième est assis sur une pile de livres étiquetés "CODE". Des icônes de réseaux sans fil, de loupe, de rouages, et une ampoule symbolisant l'idéation sont également visibles. L'ensemble crée une scène dynamique de productivité et d'innovation dans le domaine du développement informatique." height="100" width="auto">
-      <div class="col-md-10 mx-auto col-lg-5">{% include "pages/home/hx/display-acces-button-to-contact-form.html" %}</div>
+      {% include "pages/home/hx/display-acces-button-to-contact-form.html" %}
     </div>
   </div>
 </div>

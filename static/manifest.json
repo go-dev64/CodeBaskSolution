@@ -35,5 +35,6 @@
   "vendors/images/projects.svg": "http://localhost:9091/vendors/images/projects.svg",
   "vendors/images/sensible.png": "http://localhost:9091/vendors/images/sensible.png",
   "vendors/images/web_site.svg": "http://localhost:9091/vendors/images/web_site.svg",
+  "vendors/js/head_google.js": "http://localhost:9091/vendors/js/head_google.js",
   "vendors/js/htmx.js": "http://localhost:9091/vendors/js/htmx.js"
 }

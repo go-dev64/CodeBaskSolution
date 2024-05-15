@@ -1,0 +1,7 @@
+#alert-messages {
+  z-index: 9999999;
+  position: sticky;
+  top: 140px;
+  width: 100%;
+  padding: 1rem;
+}

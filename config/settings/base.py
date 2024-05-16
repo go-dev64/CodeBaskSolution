@@ -151,6 +151,9 @@ ADMINS = [
 ]
 MANAGERS = ADMINS
 
+SITE_ID = 1
+
+
 # Email configuration
 EMAIL_SUBJECT_PREFIX = "[codebasksolution] "
 DEFAULT_FROM_EMAIL = "guillaume.oblin@codebasksolution.fr"

@@ -7,7 +7,7 @@
 .slider {
   display: flex; /* Affiche les slides en ligne */
   white-space: nowrap;
-  animation: slide 10s linear infinite; /* Animation pour déplacer le contenu */
+  animation: slide 30s linear infinite; /* Animation pour déplacer le contenu */
 }
 
 .slide {

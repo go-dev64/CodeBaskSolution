@@ -1,17 +1,17 @@
 {
-  "app.css": "/static/css/app.968e59a6f8d34f565985.css",
-  "app.js": "/static/js/app.8a42a47d.js",
-  "css/app.968e59a6f8d34f565985.css.map": "/static/css/app.968e59a6f8d34f565985.css.map",
+  "app.css": "/static/css/app.3b16a9bc9cfb14c93dd8.css",
+  "app.js": "/static/js/app.31725c5f.js",
+  "css/app.3b16a9bc9cfb14c93dd8.css.map": "/static/css/app.3b16a9bc9cfb14c93dd8.css.map",
   "entrypoints": {
     "app": {
       "assets": {
         "js": [
           "/static/js/runtime.6f76a6e5.js",
           "/static/js/740.4c7e34b1.js",
-          "/static/js/app.8a42a47d.js"
+          "/static/js/app.31725c5f.js"
         ],
         "css": [
-          "/static/css/app.968e59a6f8d34f565985.css"
+          "/static/css/app.3b16a9bc9cfb14c93dd8.css"
         ]
       }
     }
@@ -19,7 +19,7 @@
   "js/740.4c7e34b1.js": "/static/js/740.4c7e34b1.js",
   "js/740.4c7e34b1.js.LICENSE.txt": "/static/js/740.4c7e34b1.js.LICENSE.txt",
   "js/740.4c7e34b1.js.map": "/static/js/740.4c7e34b1.js.map",
-  "js/app.8a42a47d.js.map": "/static/js/app.8a42a47d.js.map",
+  "js/app.31725c5f.js.map": "/static/js/app.31725c5f.js.map",
   "js/runtime.6f76a6e5.js.map": "/static/js/runtime.6f76a6e5.js.map",
   "runtime.js": "/static/js/runtime.6f76a6e5.js",
   "vendors/.DS_Store": "/static/vendors/.DS_Store",

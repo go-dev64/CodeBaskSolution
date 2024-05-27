@@ -37,7 +37,6 @@
     {% block navigation %}
       {% include "partials/navigation.html" %}
     {% endblock navigation %}
-    <div id="alert-messages">{% include "partials/messages.html" %}</div>
     {% block outer_content %}
       <main>
         {% block content %}
@@ -45,6 +44,10 @@
         {% endblock content %}
       </main>
     {% endblock outer_content %}
+    <div id="alert-messages"
+         aria-live="polite"
+         aria-atomic="true"
+         class="position-relative">{% include "partials/messages.html" %}</div>
     {% block footer %}
       {% include "partials/footer.html" %}
     {% endblock footer %}

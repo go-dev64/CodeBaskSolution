@@ -1,7 +1,84 @@
-#alert-messages {
-  z-index: 9999999;
-  position: sticky;
-  top: 140px;
-  width: 100%;
-  padding: 1rem;
+/*
+*
+* ==========================================
+* INTRO
+* ==========================================
+*
+*/
+.intro {
+  padding-top: 80px;
+  min-height: 60vh;
+  background: url("../../vendors/images/parallax.jpg") no-repeat center center;
+}
+
+.intro-text,
+.intro-text {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+#map {
+  height: 400px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.heading {
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 0.1em;
+  display: inline-block;
+  line-height: 1;
+  font-weight: bold;
+  padding: 1rem 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.title-service {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1, 5rem;
+  font-weight: bold;
+}
+
+.p-service {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1, 1rem;
+}
+
+.image-service {
+  max-height: 100px;
+  width: auto;
+}
+
+:target:before {
+  content: "";
+  display: block;
+  height: 150px; /* La hauteur de ta navbar fixe */
+  margin: -90px 0 0; /* Négatif la hauteur de ta navbar fixe */
+}
+
+@media (max-width: 990px) {
+  :target:before {
+    height: 350px; /* Hauteur ajustée de la navbar sur les petits écrans */
+    margin: -100px 0 0; /* Négatif la hauteur ajustée de la navbar sur les petits écrans */
+  }
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+  margin: 1rem;
+}
+
+@media (max-width: 1200px) {
+  .logo {
+    height: 60px;
+    margin: auto;
+  }
 }

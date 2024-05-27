@@ -2,6 +2,7 @@ import "../styles/index.scss";
 import "bootstrap/dist/js/bootstrap.bundle";
 import "../components/terminal_effect.js";
 import "../../vendors/js/htmx.js";
+import "../../vendors/js/toast.js";
 
 import { Application } from "@hotwired/stimulus";
 import { definitionsFromContext } from "@hotwired/stimulus-webpack-helpers";

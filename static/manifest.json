@@ -1,14 +1,14 @@
 {
   "app.css": "/static/css/app.3b16a9bc9cfb14c93dd8.css",
-  "app.js": "/static/js/app.31725c5f.js",
+  "app.js": "/static/js/app.a56adae5.js",
   "css/app.3b16a9bc9cfb14c93dd8.css.map": "/static/css/app.3b16a9bc9cfb14c93dd8.css.map",
   "entrypoints": {
     "app": {
       "assets": {
         "js": [
           "/static/js/runtime.6f76a6e5.js",
-          "/static/js/740.4c7e34b1.js",
-          "/static/js/app.31725c5f.js"
+          "/static/js/533.617868e8.js",
+          "/static/js/app.a56adae5.js"
         ],
         "css": [
           "/static/css/app.3b16a9bc9cfb14c93dd8.css"
@@ -16,10 +16,10 @@
       }
     }
   },
-  "js/740.4c7e34b1.js": "/static/js/740.4c7e34b1.js",
-  "js/740.4c7e34b1.js.LICENSE.txt": "/static/js/740.4c7e34b1.js.LICENSE.txt",
-  "js/740.4c7e34b1.js.map": "/static/js/740.4c7e34b1.js.map",
-  "js/app.31725c5f.js.map": "/static/js/app.31725c5f.js.map",
+  "js/533.617868e8.js": "/static/js/533.617868e8.js",
+  "js/533.617868e8.js.LICENSE.txt": "/static/js/533.617868e8.js.LICENSE.txt",
+  "js/533.617868e8.js.map": "/static/js/533.617868e8.js.map",
+  "js/app.a56adae5.js.map": "/static/js/app.a56adae5.js.map",
   "js/runtime.6f76a6e5.js.map": "/static/js/runtime.6f76a6e5.js.map",
   "runtime.js": "/static/js/runtime.6f76a6e5.js",
   "vendors/.DS_Store": "/static/vendors/.DS_Store",
@@ -40,5 +40,6 @@
   "vendors/images/sensible.png": "/static/vendors/images/sensible.png",
   "vendors/images/web_site.svg": "/static/vendors/images/web_site.svg",
   "vendors/js/head_google.js": "/static/vendors/js/head_google.js",
-  "vendors/js/htmx.js": "/static/vendors/js/htmx.js"
+  "vendors/js/htmx.js": "/static/vendors/js/htmx.js",
+  "vendors/js/toast.js": "/static/vendors/js/toast.js"
 }

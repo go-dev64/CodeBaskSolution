@@ -1,17 +1,12 @@
 import * as bootstrap from "bootstrap";
-
 document.body.addEventListener("htmx:afterSwap", function () {
-  const toastElList = document.querySelectorAll(".toast");
-  const options = { animation: true, autohide: true, delay: 8000 };
-  const toastList = [...toastElList].map(
-    (toastEl) => new bootstrap.Toast(toastEl, options),
-  );
-
-  if (toastList.length > 0) {
-    toastList.forEach((toast) => {
+  const t = document.querySelectorAll(".toast"),
+    o = { animation: !0, autohide: !0, delay: 8e3 },
+    e = [...t].map((t) => new bootstrap.Toast(t, o));
+  e.length > 0 &&
+    e.forEach((t) => {
       setTimeout(() => {
-        toast.show();
-      }, 500); // Delay 500ms to show toast
+        t.show();
+      }, 500);
     });
-  }
 });

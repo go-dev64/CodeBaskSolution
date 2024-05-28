@@ -1,40 +1,45 @@
 {
-  "app.css": "http://localhost:9091/css/app.css",
-  "app.js": "http://localhost:9091/js/app.js",
+  "app.css": "/static/css/app.3b16a9bc9cfb14c93dd8.css",
+  "app.js": "/static/js/app.0ef3e53a.js",
+  "css/app.3b16a9bc9cfb14c93dd8.css.map": "/static/css/app.3b16a9bc9cfb14c93dd8.css.map",
   "entrypoints": {
     "app": {
       "assets": {
         "js": [
-          "http://localhost:9091/js/runtime.js",
-          "http://localhost:9091/js/vendors-node_modules_hotwired_stimulus-webpack-helpers_dist_stimulus-webpack-helpers_js-node_-7c38e9.js",
-          "http://localhost:9091/js/app.js"
+          "/static/js/runtime.6f76a6e5.js",
+          "/static/js/533.617868e8.js",
+          "/static/js/app.0ef3e53a.js"
         ],
         "css": [
-          "http://localhost:9091/css/app.css"
+          "/static/css/app.3b16a9bc9cfb14c93dd8.css"
         ]
       }
     }
   },
-  "js/vendors-node_modules_hotwired_stimulus-webpack-helpers_dist_stimulus-webpack-helpers_js-node_-7c38e9.js": "http://localhost:9091/js/vendors-node_modules_hotwired_stimulus-webpack-helpers_dist_stimulus-webpack-helpers_js-node_-7c38e9.js",
-  "runtime.js": "http://localhost:9091/js/runtime.js",
-  "vendors/.DS_Store": "http://localhost:9091/vendors/.DS_Store",
-  "vendors/.gitkeep": "http://localhost:9091/vendors/.gitkeep",
-  "vendors/gif/projet-en-cour.gif": "http://localhost:9091/vendors/gif/projet-en-cour.gif",
-  "vendors/images/.gitkeep": "http://localhost:9091/vendors/images/.gitkeep",
-  "vendors/images/3459559.jpg": "http://localhost:9091/vendors/images/3459559.jpg",
-  "vendors/images/7094814.jpg": "http://localhost:9091/vendors/images/7094814.jpg",
-  "vendors/images/agile.svg": "http://localhost:9091/vendors/images/agile.svg",
-  "vendors/images/api.svg": "http://localhost:9091/vendors/images/api.svg",
-  "vendors/images/automatisation.svg": "http://localhost:9091/vendors/images/automatisation.svg",
-  "vendors/images/e-commerce.svg": "http://localhost:9091/vendors/images/e-commerce.svg",
-  "vendors/images/logiciel.png": "http://localhost:9091/vendors/images/logiciel.png",
-  "vendors/images/logo-codebasksolution.svg": "http://localhost:9091/vendors/images/logo-codebasksolution.svg",
-  "vendors/images/notion-logo.svg": "http://localhost:9091/vendors/images/notion-logo.svg",
-  "vendors/images/parallax.jpg": "http://localhost:9091/vendors/images/parallax.jpg",
-  "vendors/images/projects.svg": "http://localhost:9091/vendors/images/projects.svg",
-  "vendors/images/sensible.png": "http://localhost:9091/vendors/images/sensible.png",
-  "vendors/images/web_site.svg": "http://localhost:9091/vendors/images/web_site.svg",
-  "vendors/js/head_google.js": "http://localhost:9091/vendors/js/head_google.js",
-  "vendors/js/htmx.js": "http://localhost:9091/vendors/js/htmx.js",
-  "vendors/js/toast.js": "http://localhost:9091/vendors/js/toast.js"
+  "js/533.617868e8.js": "/static/js/533.617868e8.js",
+  "js/533.617868e8.js.LICENSE.txt": "/static/js/533.617868e8.js.LICENSE.txt",
+  "js/533.617868e8.js.map": "/static/js/533.617868e8.js.map",
+  "js/app.0ef3e53a.js.map": "/static/js/app.0ef3e53a.js.map",
+  "js/runtime.6f76a6e5.js.map": "/static/js/runtime.6f76a6e5.js.map",
+  "runtime.js": "/static/js/runtime.6f76a6e5.js",
+  "vendors/.DS_Store": "/static/vendors/.DS_Store",
+  "vendors/.gitkeep": "/static/vendors/.gitkeep",
+  "vendors/gif/projet-en-cour.gif": "/static/vendors/gif/projet-en-cour.gif",
+  "vendors/images/.gitkeep": "/static/vendors/images/.gitkeep",
+  "vendors/images/3459559.jpg": "/static/vendors/images/3459559.jpg",
+  "vendors/images/7094814.jpg": "/static/vendors/images/7094814.jpg",
+  "vendors/images/agile.svg": "/static/vendors/images/agile.svg",
+  "vendors/images/api.svg": "/static/vendors/images/api.svg",
+  "vendors/images/automatisation.svg": "/static/vendors/images/automatisation.svg",
+  "vendors/images/e-commerce.svg": "/static/vendors/images/e-commerce.svg",
+  "vendors/images/logiciel.png": "/static/vendors/images/logiciel.png",
+  "vendors/images/logo-codebasksolution.svg": "/static/vendors/images/logo-codebasksolution.svg",
+  "vendors/images/notion-logo.svg": "/static/vendors/images/notion-logo.svg",
+  "vendors/images/parallax.jpg": "/static/vendors/images/parallax.jpg",
+  "vendors/images/projects.svg": "/static/vendors/images/projects.svg",
+  "vendors/images/sensible.png": "/static/vendors/images/sensible.png",
+  "vendors/images/web_site.svg": "/static/vendors/images/web_site.svg",
+  "vendors/js/head_google.js": "/static/vendors/js/head_google.js",
+  "vendors/js/htmx.js": "/static/vendors/js/htmx.js",
+  "vendors/js/toast.js": "/static/vendors/js/toast.js"
 }

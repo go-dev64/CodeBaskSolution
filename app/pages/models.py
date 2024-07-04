@@ -89,3 +89,10 @@ class ContactSubmission(models.Model):
         # Nouvelle fonction ajoutÃ©e
         x = 1
         print(x)
+
+    def nouveau_toto():
+        pass
+
+    def nouveau_stata():
+        # Nouvelle fonction ajoutÃ©e
+        pass

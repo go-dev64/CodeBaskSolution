@@ -84,3 +84,8 @@ class ContactSubmission(models.Model):
     def nouveau_stata():
         # Nouvelle fonction ajoutÃ©e
         pass
+
+    def nouveau_ta():
+        # Nouvelle fonction ajoutÃ©e
+        x = 1
+        print(x)

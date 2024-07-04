@@ -48,6 +48,7 @@ def hx__submit_contact_form(request):
             headers={"HX-Swap": "none"},  # type: ignore
         )
     form.save()
+
     messages.success(request, "Votre demande a bien été envoyé!")
     return TemplateResponse(
         request, "pages/home/hx/submit-contact-form--success.html", {"form": form}

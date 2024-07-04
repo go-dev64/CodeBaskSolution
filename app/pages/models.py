@@ -87,3 +87,6 @@ class ContactSubmission(models.Model):
     def nouveau_stata():
         # Nouvelle fonction ajoutÃ©e
         pass
+
+    def toto(self):
+        print("toto")

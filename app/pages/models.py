@@ -80,3 +80,10 @@ class ContactSubmission(models.Model):
 
     def tatat(self):
         print("tatat")
+
+    def nouveau_toto():
+        pass
+
+    def nouveau_stata():
+        # Nouvelle fonction ajoutÃ©e
+        pass

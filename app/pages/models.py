@@ -77,3 +77,10 @@ class ContactSubmission(models.Model):
 
     def toto(self):
         print("toto")
+
+    def nouveau_toto():
+        pass
+
+    def nouveau_stata():
+        # Nouvelle fonction ajoutÃ©e
+        pass

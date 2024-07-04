@@ -77,3 +77,6 @@ class ContactSubmission(models.Model):
 
     def toto(self):
         print("toto")
+
+    def tatat(self):
+        print("tatat")
